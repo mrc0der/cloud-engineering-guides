@@ -1,6 +1,10 @@
 # Introduction to Docker and Building Docker Images
 
-Docker is a popular open-source platform for developing, shipping, and running applications. It provides an easy way to package applications into containers that can be run on any system with the Docker Engine installed. This lab will provide an introduction to Docker and guide you through the process of building your own Docker images.
+Docker is a popular open-source platform for developing, shipping, and running
+applications. It provides an easy way to package applications into containers
+that can be run on any system with the Docker Engine installed. This lab will
+provide an introduction to Docker and guide you through the process of building
+your own Docker images.
 
 ## What is Docker?
 
@@ -41,11 +45,11 @@ server.listen(port, hostname, () => {
 
 To build our image we will need two files - a `Dockerfile` which contains instructions for building our image and an `index.js` file which contains our NodeJS web server code (as shown above). Create these two files in the same directory on your Linux machine then open up the `Dockerfile` in your text editor of choice (e.g., vim). Add the following lines to it:
 
-```
+```dockerfile
 FROM node:latest
 ```
 
-This line tells docker which base image we want to use for our own custom image - in this case we are using the latest version of NodeJS available on docker hub (https://hub.docker/com/_/node).
+This line tells docker which base image we want to use for our own custom image - in this case we are using the latest version of NodeJS available on docker hub (<https://hub.docker/com/_/node>).
 
 Next add these lines to your `Dockerfile`:
 

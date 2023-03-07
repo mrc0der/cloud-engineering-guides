@@ -22,7 +22,34 @@ The first step is to install Packer on your local machine. You can download the 
 
 Once you have installed Packer on your system, create a configuration file in JSON format that defines all of the settings for your image and any software packages that need to be installed on it. Here is an example configuration file:
 
-    {   "builders": [{   "type": "amazon-ebs",   "region": "us-east-1",   "source_ami_filter": {     "filters": {       "virtualization-type": "hvm",       "name": "amzn2-ami-hvm*",       "root-device-type": "ebs"     },     "owners": ["amazon"],     "most_recent": true   },   }],   "provisioners":[{     "type":"shell",     "inline":[       “sudo apt update”,       “sudo apt install -y nginx”    ] }] }
+```json
+{
+    "builders": [
+        {
+            "type": "amazon-ebs",
+            "region": "us-east-1",
+            "source_ami_filter": {
+                "filters": {
+                    "virtualization-type": "hvm",
+                    "name": "amzn2-ami-hvm*",
+                    "root-device-type": "ebs"
+                },
+                "owners": [
+                    "amazon"
+                ],
+                "most_recent": true
+            },
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "inline": [       “sudo apt update”,       “sudo apt install -y nginx”
+            ]
+        }
+    ]
+}
+```
 
 This configuration file tells Packer that we want it to create an Amazon EBS image in us-east-1 region using the most recent HVM AMI available from Amazon (specified by `source_ami_filter`). It also tells Packer that we want it to install Nginx web server on our image (specified by `provisioners`).
 
@@ -32,6 +59,6 @@ Once you have created your configuration file save it as `packer_configuration.j
 
 Now that you have created your configuration file you can use Packer's command line interface (CLI) tool `packer`to build your image from it:
 
-    packer build packer_configuration.json
+`packer build packer_configuration.json`
 
 This command will tell packer to read our configuration file `packer_configuration`and create our image according to its settings specified in the file . Once packers finishes building our image ,it will output its ID which we can use later when creating EC2 instances from our newly created AMI .

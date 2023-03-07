@@ -21,11 +21,11 @@ Before beginning this lab, you should have:
 
 ## Tasks
 
-1. **Identify Tools & Techniques** - Identify the different tools and techniques available for discovering your existing infrastructure and applications in order to plan and execute your migration project. Some examples include using Terraform or Serverless Framework for infrastructure discovery, or using application profiling tools such as AppDynamics or New Relic for application discovery.
+1.  **Identify Tools & Techniques** - Identify the different tools and techniques available for discovering your existing infrastructure and applications in order to plan and execute your migration project. Some examples include using Terraform or Serverless Framework for infrastructure discovery, or using application profiling tools such as AppDynamics or New Relic for application discovery.
 
-2. **Use Terraform & Serverless Framework** - Use Terraform and Serverless Framework to discover existing infrastructure components such as servers, databases, storage systems, networks, etc., as well as any applications running on those components. This can be done by writing code that queries APIs or by manually inspecting each component individually.
+2.  **Use Terraform & Serverless Framework** - Use Terraform and Serverless Framework to discover existing infrastructure components such as servers, databases, storage systems, networks, etc., as well as any applications running on those components. This can be done by writing code that queries APIs or by manually inspecting each component individually.
 
-3. **Plan & Execute Migration** - Once you have identified all of the components that need to be migrated, use this information to plan out your migration strategy. This should include details such as which components need to be migrated first, what order they should be migrated in, what resources are needed for each component, etc., so that you can ensure a successful migration with minimal disruption of services.
+3.  **Plan & Execute Migration** - Once you have identified all of the components that need to be migrated, use this information to plan out your migration strategy. This should include details such as which components need to be migrated first, what order they should be migrated in, what resources are needed for each component, etc., so that you can ensure a successful migration with minimal disruption of services.
 
 ## Conclusion
 
