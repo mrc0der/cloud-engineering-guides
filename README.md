@@ -19,6 +19,7 @@ Areas to focus on:
 
 # What Is DevOps?
 
+
 ## Operating Systems
 
 
@@ -52,7 +53,11 @@ Areas to focus on:
 
 
 ## Containers
+- [Docker](./docker/docker-100.md)
 
+
+## Immutable Infrastructure
+- [Packer](./packer/Packer.md)
 
 
 ## Serverless
@@ -60,3 +65,5 @@ Areas to focus on:
 
 
 ## Agile & Scrum
+
+
