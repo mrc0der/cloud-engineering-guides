@@ -4,6 +4,8 @@
 
   // Disable line length check
   "MD013": false,
+  "MD026": false,
+  "MD024": false,
 
   // Set Ordered list item prefix to "ordered" (use 1. 2. 3. not 1. 1. 1.)
   "MD029": { "style": "ordered" },

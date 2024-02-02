@@ -1,4 +1,4 @@
-# Azure Labs
+# Azure 200 Labs
 
 [TOC]
 
