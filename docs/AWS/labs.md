@@ -1,0 +1,113 @@
+# AWS Labs
+
+[TOC]
+
+## AWS Services
+
+### Launch an EC2 Instance
+
+Create an EC2 instance using Terraform. Use the latest Amazon Linux 2 AMI. Use a t2.micro instance type. Configure the instance to allow inbound traffic on port 22/SSH. Store the key pair used for SSH access in an S3 bucket with versioning enabled. Implement security best practices like limiting access and using secure passwords.
+
+### Create a VPC
+
+Create a VPC using Terraform. Use the 10.0.0.0/16 IP range. Create two subnets: one public and one private. Configure the public subnet to have a route table that directs traffic to an Internet Gateway. Configure the private subnet to use a NAT Gateway for outbound traffic. Implement security best practices like limiting access, using secure passwords, and encrypting data in transit.
+
+### Implement Autoscaling
+
+Create an Auto Scaling Group using Terraform. Set up an ELB to distribute traffic across the instances. Configure the ASG to launch instances in the public subnet of the VPC created in Ticket 2. Set up scaling policies to automatically add or remove instances based on CPU usage. Implement security best practices like limiting access, using secure passwords, and encrypting data in transit.
+
+### Implement RDS
+
+Create an RDS instance using Terraform. Use the MySQL database engine. Use the db.t2.micro instance type. Configure the instance to allow inbound traffic on port 3306. Use an encrypted storage volume for the RDS instance. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Implement S3
+
+Create an S3 bucket using Terraform. Enable versioning and encryption by default. Create a lifecycle rule that transitions objects to Glacier storage after 30 days. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Implement CloudFormation
+
+Create a CloudFormation stack using Terraform. Use the EC2 instance created in Ticket 1 as a resource in the stack. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Implement Lambda
+
+Create a Lambda function using Terraform. Use the Python 3.8 runtime. Use an S3 bucket as a trigger for the Lambda function. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Implement CloudWatch
+
+Create a CloudWatch alarm using Terraform. Use the EC2 instance created in Ticket 1 as a metric for the alarm. Set up the alarm to notify an SNS topic when the CPU utilization exceeds 80% for more than 5 minutes. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Implement Route53
+
+Create a Route53 hosted zone using Terraform. Create an A record for the EC2 instance created in Ticket 1. Create an alias record for the ELB created in Ticket 3. Implement security best practices like limiting access, using secure passwords, and encrypting data in transit.
+
+### Implement IAM
+
+Create an IAM user using Terraform. Grant the user access to the S3 bucket created in Ticket 5. Assign the user the necessary permissions to list, read, and write objects in the bucket. Implement security best practices like using strong passwords, implementing least privilege, and enabling MFA for the user.
+
+## AWS DB Services
+
+### Implement Aurora Database
+
+Create an Aurora Database Cluster using Terraform. Use the MySQL-compatible database engine. Use the db.t2.small instance type. Configure the instance to allow inbound traffic on port 3306. Use an encrypted storagevolume for the Aurora cluster. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Implement DynamoDB
+
+Create a DynamoDB table using Terraform. Use a partition key and sort key to define the table's schema. Configure the table to use on-demand capacity. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Perform Regular Database Backups
+
+Create an AWS Backup plan using Terraform. Configure the plan to back up the Aurora Database created in Ticket 11 and the DynamoDB table created in Ticket 12. Set up a retention period of 30 days for backups. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Implement CloudFront
+
+Create a CloudFront distribution using Terraform. Configure the distribution to use the S3 bucket created in Ticket 5 as the origin. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+## AWS Best Practices
+
+### Perform Regular System Maintenance
+
+Create an AWS Systems Manager Maintenance Window using Terraform. Configure the maintenance window to run once a month. Implement a maintenance plan that includes OS and application patching, disk cleanup, and other regular maintenance tasks. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Implement GitOps Workflow
+
+Set up a Git repository using Terraform. Create a Kubernetes cluster using Terraform. Configure the cluster to use the Git repository as the source of truth for deployments. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Implement Continuous Integration
+
+Set up a CI/CD pipeline using AWS CodePipeline and Terraform. Configure the pipeline to automatically build and test code changes on every commit to the Git repository created in Ticket 16. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Implement Automated Testing
+
+Set up an automated testing framework using Terraform. Write unit tests for the application code and integration tests for the infrastructure code. Integrate the testing framework with the CI/CD pipeline created in Ticket 17. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Implement Infrastructure as Code
+
+Refactor the Terraform code used in the previous tickets to use modules and reusable code. Implement a Git-based version control system for the Terraform code. Implement semantic versioning for the Terraform code. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Implement Infrastructure Drift Detection
+
+Set up an infrastructure drift detection system using AWS Config and Terraform. Configure the system to detect changes to the infrastructure that are not reflected in the Terraform code. Integrate the drift detection system with the CI/CD pipeline created in Ticket 17. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+## AWS Cloud Native
+
+### Implement Serverless Application
+
+Develop a serverless application using AWS Lambda and Terraform. Use the Python 3.8 runtime. Use an S3 bucket as a trigger for the Lambda function. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Implement Chaos Engineering
+
+Set up a chaos engineering framework using AWS Gremlin and Terraform. Use Gremlin to simulate various failure scenarios in the infrastructure and application components. Analyze the results of the chaos experiments and use them to improve the resilience of the system. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+## Monitoring
+
+### Implement Infrastructure Monitoring
+
+Set up an infrastructure monitoring system using AWS CloudWatch and Terraform. Configure the system to monitor the application code and infrastructure metrics. Set up alarms to notify on-call engineers when critical metrics exceed predefined thresholds. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Implement Distributed Tracing
+
+Set up a distributed tracing system using AWS X-Ray and Terraform. Configure the system to trace requests across the application components. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.
+
+### Implement A/B Testing
+
+Set up an A/B testing system using AWS Lambda and Terraform. Configure the system to redirect a percentage of traffic to a different version of the application code. Use CloudWatch metrics and distributed tracing to track the results of the A/B testing. Implement security best practices like limiting access, using secure passwords, and encrypting data at rest and in transit.

@@ -1,5 +1,7 @@
 # Introduction to Docker and Building Docker Images
 
+[TOC]
+
 Docker is a popular open-source platform for developing, shipping, and running
 applications. It provides an easy way to package applications into containers
 that can be run on any system with the Docker Engine installed. This lab will
@@ -20,11 +22,11 @@ Containers are isolated from each other and bundle their own software, libraries
 
 ## Prerequisites
 
-Before you begin this lab you should have some basic understanding of Linux command line tools such as `docker`, `docker-compose` and `docker-machine`. Additionally, you should have access to a Linux machine with the latest version of Docker installed on it.
+Before you begin this lab you should have some basic understanding of command line tools such as `docker`, `docker-compose` and `docker-machine`. Additionally, you **should** have access to a machine with the latest version of Docker installed on it.
 
-## Exercise 1 - Building Your First Image
+## Exercise
 
-In this exercise we will build our first docker image using the `docker build` command. We will use a simple NodeJS web server as our example application for this exercise:
+In this exercise, we will build our first docker image using the `docker build` command. We will use a simple NodeJS web server as our example application for this exercise:
 
 ```javascript
 const http = require("http");
@@ -53,7 +55,13 @@ This line tells docker which base image we want to use for our own custom image 
 
 Next add these lines to your `Dockerfile`:
 
-`WORKDIR /app COPY indexjs . CMD ["node", "indexjs"]`
+```docker
+WORKDIR /app
+
+COPY indexjs .
+
+CMD ["node", "indexjs"]
+```
 
 The first line sets the working directory for our container inside which all subsequent commands will be executed - in this case it's set to `/app`. The second line copies our NodeJS web server code into this directory while the third line tells docker what command it should execute when running our container (in this case it's running our NodeJS web server).
 
@@ -64,3 +72,5 @@ Now that we have written out instructions for building our image save them in yo
 This command tells docker to build an image called “my_image” based on instructions contained within the current directory (denoted by “ . ” at the end). If successful you should see output similar to this:
 
 `Successfully built <image_id> Successfully tagged my_image`
+
+## Conculsion
