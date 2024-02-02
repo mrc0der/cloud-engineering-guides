@@ -1,0 +1,14 @@
+site_name: Cloud Engineering Labs
+site_author: Jon Price <jon@jonprice.io>
+
+theme:
+  name: material
+
+edit_uri: https://github.com/mrc0der/cloud-engineering-labs/blob/main/docs/
+
+nav:
+  - AWS.md
+  - Azure.md
+  # - Docker.md
+  - Immutable.md
+  - Containers.md

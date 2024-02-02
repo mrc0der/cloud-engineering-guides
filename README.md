@@ -5,6 +5,7 @@ There are many facets to Cloud Engineering. As I work with more and more enginee
 Great cloud engineers come from great Devops engineers. So we should break that down a little. What makes a good DevOps engineer? Ill start with saying that engineers with a wide variety of skills are better suited for challenges in the cloud compared to someone that is an expert in a few domains.
 
 Areas to focus on:
+
 - OS
 - Databases and Caching
 - Networking & Automation
@@ -17,53 +18,32 @@ Areas to focus on:
 - Serverless
 - Agile & Scrum
 
-# What Is DevOps?
+## What Is DevOps?
 
+### Operating Systems
 
-## Operating Systems
+### Databases and Caching
 
+### Networking & Automation
 
+### Monitoring & Logging
 
-## Databases and Caching
+### Configuration Management
 
+### Security & Reliability
 
+### Development Automation
 
-## Networking & Automation
+### IaC
 
+### Containers
 
-
-## Monitoring & Logging
-
-
-
-## Configuration Management
-
-
-
-## Security & Reliability
-
-
-
-## Development Automation
-
-
-
-## IaC
-
-
-
-## Containers
 - [Docker](./docker/docker-100.md)
 
+### Immutable Infrastructure
 
-## Immutable Infrastructure
 - [Packer](./packer/Packer.md)
 
+### Serverless
 
-## Serverless
-
-
-
-## Agile & Scrum
-
-
+### Agile & Scrum
