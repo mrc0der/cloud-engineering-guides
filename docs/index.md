@@ -2,15 +2,15 @@
 
 ## Platforms Covered
 
-- [AWS](./AWS/)
-- [Azure](./Azure/)
+- [AWS](./AWS.md)
+- [Azure](./Azure.md)
 <!-- * [GCP](./GCP/) -->
 
 ## Technologies covered
 
-- [CICD](./CICD/)
-- [Containers](./Containers/)
-- [Immutable](./immutable/)
+- [CICD](./CICD.md)
+- [Containers](./Containers.md)
+- [Immutable](./Immutable.md)
 
 ## Consulting Tips
 

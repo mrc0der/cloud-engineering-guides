@@ -1,6 +1,6 @@
-# Azure
+# Getting started with Azure
 
 [TOC]
 
-- [Azure Labs](./Azure/Azure.md)
-- [Azure Advanced Labs](./Azure/Azure200.md)
+- [Azure 100 Labs](./Azure/Azure100.md)
+- [Azure 200 Labs](./Azure/Azure200.md)
