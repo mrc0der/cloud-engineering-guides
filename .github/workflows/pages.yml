@@ -23,4 +23,4 @@ jobs:
           python-version: 3.11
       - run: pip install pipenv
       - run: pipenv install mkdocs mkdocs-material
-      - run: mkdocs gh-deploy --force
+      - run: pipenv run mkdocs gh-deploy --force
