@@ -9,6 +9,6 @@ edit_uri: https://github.com/mrc0der/cloud-engineering-labs/tree/main
 nav:
   - AWS.md
   - Azure.md
-  # - Docker.md
+  - CICD.md
   - Immutable.md
   - Containers.md

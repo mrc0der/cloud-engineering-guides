@@ -8,10 +8,9 @@
 
 ## Technologies covered
 
+- [CICD](./CICD/)
 - [Containers](./Containers/)
-<!-- * [Data](./data/index/) -->
 - [Immutable](./immutable/)
-<!-- * [DevOps](./devops/index/) -->
 
 ## Consulting Tips
 
