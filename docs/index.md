@@ -8,7 +8,7 @@
 
 ## Technologies covered
 
-- [Docker](./Docker/)
+- [Containers](./Containers/)
 <!-- * [Data](./data/index/) -->
 - [Immutable](./immutable/)
 <!-- * [DevOps](./devops/index/) -->

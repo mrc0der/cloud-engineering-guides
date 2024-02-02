@@ -2,41 +2,81 @@
 
 [TOC]
 
-## Create a basic Azure virtual machine
+## Task 1: Azure Fundamentals
 
-Create an Azure virtual machine with the appropriate size and configuration. Ensure that the VM is secure and follows best practices for cloud security.
+Understand and Implement Azure Fundamentals
 
-## Create an Azure storage account
+**Goal:** Gain a foundational understanding of Azure services, management tools, and security features.
 
-Create an Azure storage account with the appropriate configuration. Ensure that the storage account is secure and follows best practices for cloud security.
+**Description:** Explore core Azure services, including Azure Compute, Storage, and Networking services.
+Set up a basic Azure environment with a virtual network and a couple of VMs.
 
-## Create a Terraform script to deploy a web application
+**Acceptance Criteria** Successfully create an Azure account and navigate the Azure portal.
+Deploy a virtual network and two VMs within the Azure portal.
+Document the process and key learnings in a shared repository.
 
-Create a Terraform script to deploy a web application to an Azure virtual machine. Ensure that the script follows best practices for Terraform scripting and is secure.
+## Task 2: Infrastructure as Code with Azure ARM Templates
 
-## Set up a database in Azure
+Deploy Infrastructure Using Azure Resource Manager (ARM) Templates
 
-Set up a database in Azure with the appropriate configuration. Ensure that the database is secure and follows best practices for cloud security.
-Perform regular backups of databases in Azure
+**Goal:** Learn how to define and deploy infrastructure as code on Azure using ARM templates.
 
-Perform regular backups of databases in Azure using the appropriate tools and techniques. Ensure that the backups are secure and follow best practices for cloud security.
+**Description:** Create an ARM template to deploy a scalable web application infrastructure.
+Include resources such as Azure App Service, SQL Database, and Application Insights.
 
-## Schedule regular maintenance tasks on databases in Azure
+**Acceptance Criteria** ARM template is written in JSON and stored in a version-controlled repository.
+Infrastructure deployment is automated and repeatable with the ARM template.
+Validate the deployment through the Azure portal and ensure all components are correctly configured.
 
-Schedule regular maintenance tasks on databases in Azure using the appropriate tools and techniques. Ensure that all maintenance tasks are completed successfully and follow best practices for cloud security.
+## Task 3: Azure Active Directory and RBAC
 
-## Implement semantic versioning of infrastructure code
+Configure Azure Active Directory (AD) and Role-Based Access Control (RBAC)
 
-Implement semantic versioning of infrastructure code using the appropriate tools and techniques. Ensure that all changes are tracked properly and follow best practices for version control systems.
+**Goal:** Understand and implement security and identity management through Azure AD and RBAC.
 
-## Set up continuous integration/continuous delivery (CI/CD) pipelines
+**Description:** Set up an Azure AD instance and create user groups.
+Assign RBAC roles to different user groups to manage access to Azure resources.
 
-Set up continuous integration/continuous delivery (CI/CD) pipelines using the appropriate tools and techniques. Ensure that all pipelines are secure and follow best practices for CI/CD pipelines in the cloud.
+**Acceptance Criteria** The Azure AD instance is correctly set up with at least two user groups.
+RBAC roles are assigned to these groups, ensuring the principle of least privilege.
+Successfully demonstrate access control by having different users access resources based on their RBAC roles.
 
-## Implement GitOps workflows
+## Task 4: Implement and Manage Azure Networking
 
-Implement GitOps workflows using the appropriate tools and techniques. Ensure that all GitOps workflows are secure and follow best practices for GitOps workflows in the cloud.
+Design and Implement a Secure Azure Networking Solution
 
-## Develop scripts to automate deployment processes
+**Goal:** Develop skills in designing, implementing, and managing secure and scalable Azure networking solutions.
 
-Develop scripts to automate deployment processes using the appropriate programming language(s). Ensure that all scripts are secure and follow best practices for scripting languages used in DevOps automation processes in the cloud.
+**Description:** Create a Virtual Network with subnetting to separate different parts of the system.
+Implement Network Security Groups (NSGs) and Application Security Groups (ASGs) for fine-grained access control.
+
+**Acceptance Criteria** Virtual Network and subnets are correctly configured and documented.
+NSGs and ASGs are implemented to secure network access, with rules documented.
+Connectivity is tested and verified between different parts of the system without compromising security.
+
+## Task 5: Azure DevOps and CI/CD Pipelines
+
+Build CI/CD Pipelines Using Azure DevOps
+
+**Goal** Gain hands-on experience with Azure DevOps Services to automate the build and deployment process.
+
+**Description:** Set up an Azure DevOps project and connect it to a source control repository.
+Create CI/CD pipelines to automate the build and deployment of a web application to Azure App Service.
+
+**Acceptance Criteria** Azure DevOps project is correctly set up and integrated with a version control system.
+CI pipeline successfully builds the code upon each commit.
+CD pipeline deploys the build artifacts to Azure App Service automatically upon successful build.
+Deployment is verified by accessing the deployed application.
+
+## Task 6: Azure Monitoring and Diagnostics
+
+Implement Monitoring, Logging, and Diagnostics in Azure
+
+**Goal:** Learn to implement and configure monitoring and diagnostics features in Azure to maintain and optimize applications.
+
+**Description:** Configure Azure Monitor and Application Insights for a web application.
+Set up alerts and diagnostic logging to track performance issues and exceptions.
+
+**Acceptance Criteria** Azure Monitor and Application Insights are correctly configured for the web application.
+Custom alerts are set up for key metrics and log searches.
+Successfully demonstrate the ability to diagnose and troubleshoot an issue using the logs and metrics collected.
