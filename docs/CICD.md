@@ -83,3 +83,21 @@ False positives/negatives: Risk of tests not accurately reflecting real-world us
 Learning curve: Requires understanding IaC syntax and best practices.
 Initial setup: Takes time to define and test infrastructure code initially.
 Complexity: Managing and organizing IaC for large-scale environments can be complex.
+
+## Tools
+
+### GitHub
+
+##### Repo Tips
+
+https://github.com/joelparkerhenderson/github-special-files-and-paths
+
+##### Games
+
+https://github.com/joshzcold/Cold-Family-Feud
+
+##### Actions
+
+[GitHub Action for pylint - GitHub Marketplace](https://github.com/marketplace/actions/github-action-for-pylint)
+
+[Automating Dependabot with GitHub Actions - GitHub Docs](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/automating-dependabot-with-github-actions)
