@@ -1,0 +1,77 @@
+site_name: Cloud Engineering Labs
+site_author: Jon Price <jon@jonprice.io>
+site_url: https://mrc0der.github.io/cloud-engineering-labs/
+
+theme:
+  name: material
+  features:
+    - announce.dismiss
+    # - content.action.edit
+    - header.autohide
+    - navigation.top
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    primary: green
+
+repo_url: https://github.com/mrc0der/cloud-engineering-labs/tree/main
+edit_uri: edit/main/docs/
+repo_name: mrc0der/cloud-engineering-labs
+
+nav:
+  - AWS:
+      - AWS.md
+      - AWS/AWS100.md
+      - AWS/AWS200.md
+      - AWS/ec2-userdata.md
+  - Azure:
+      - Azure.md
+      # - Azure/Azure100.md
+      # - Azure/Azure200.md
+      - Azure/*.md
+  - DevOps:
+      - DevOps.md
+      - CICD.md
+      - devops-tools/CICDplatforms.md
+  # - DevOps.md
+  - Immutable.md
+  - Containers.md
+  # - devops-tools/*.md
+
+plugins:
+  - social
+  - search
+  - awesome-pages
+
+extra:
+  version:
+    default: main
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  analytics:
+    #   provider: google
+    #   property: G-XXXXXXXXXX
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.

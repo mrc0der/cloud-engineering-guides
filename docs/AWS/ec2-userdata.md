@@ -1,4 +1,6 @@
-# Lab: Using AWS EC2 UserData to Customize an Autoscaling Group Instance
+# Lab: Using AWS EC2 UserData
+
+Using AWS EC2 UserData to Customize an Autoscaling Group Instance
 
 ## Overview
 
