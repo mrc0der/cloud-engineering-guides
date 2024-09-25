@@ -38,10 +38,11 @@ nav:
       - DevOps.md
       - CICD.md
       - devops-tools/CICDplatforms.md
-  # - DevOps.md
+      - ConfigMgmt.md
+  - Databases.md
   - Immutable.md
   - Containers.md
-  # - devops-tools/*.md
+  - Resources.md
 
 plugins:
   - social
