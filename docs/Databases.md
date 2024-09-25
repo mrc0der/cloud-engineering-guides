@@ -1,4 +1,4 @@
-# Know your Databases
+# Databases
 
 ## MySQL
 
@@ -58,13 +58,13 @@ Document Storage: Suited for applications that require a flexible schema and the
 - Log and Event Data Analysis: Commonly used for storing, searching, and analyzing large volumes of log data.
 - Real-Time Analytics: Suitable for applications requiring real-time analysis of data.
 
-### Pros:
+### Pros
 
 - Fast Search: Built on Lucene, Elasticsearch provides fast full-text search capabilities.
 - Scalable: It can easily scale horizontally to handle large volumes of data.
 - Flexible: Supports complex query types and analytics.
 
-### Cons:
+### Cons
 
 - Complexity: Can be complex to set up and maintain, especially in larger clusters.
 - Resource Intensive: Can be resource-intensive, requiring significant memory and CPU.
