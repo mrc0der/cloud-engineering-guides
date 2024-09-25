@@ -44,10 +44,10 @@ nav:
   - Containers.md
   - Resources.md
 
-plugins:
-  - social
-  - search
-  - awesome-pages
+# plugins:
+#   - social
+#   - search
+#   - awesome-pages
 
 extra:
   version:
