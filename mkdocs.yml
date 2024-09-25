@@ -14,8 +14,8 @@ theme:
     - navigation.tabs.sticky
     - search.suggest
     - search.highlight
-  icon:
-    repo: fontawesome/brands/github
+  # icon:
+  #   repo: fontawesome/brands/github
   palette:
     primary: green
 
