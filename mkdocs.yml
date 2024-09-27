@@ -34,6 +34,8 @@ nav:
       - Azure/Azure100.md
       # - Azure/Azure200.md
       - Azure/*.md
+  - GCP:
+      - GCP/*.md
   - DevOps:
       - DevOps.md
       - CICD.md
