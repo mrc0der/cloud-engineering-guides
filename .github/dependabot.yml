@@ -1,0 +1,38 @@
+# Dependabot version + security updates, grouped per ecosystem.
+# One PR per ecosystem per update-type instead of one PR per package.
+version: 2
+updates:
+- package-ecosystem: github-actions
+  directory: /
+  schedule:
+    interval: monthly
+    time: "09:00"
+    timezone: America/Los_Angeles
+  labels:
+  - dependencies
+  groups:
+    github-actions-version:
+      applies-to: version-updates
+      patterns:
+      - '*'
+    github-actions-security:
+      applies-to: security-updates
+      patterns:
+      - '*'
+- package-ecosystem: pipenv
+  directory: /
+  schedule:
+    interval: monthly
+    time: "09:00"
+    timezone: America/Los_Angeles
+  labels:
+  - dependencies
+  groups:
+    pipenv-version:
+      applies-to: version-updates
+      patterns:
+      - '*'
+    pipenv-security:
+      applies-to: security-updates
+      patterns:
+      - '*'
